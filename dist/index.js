@@ -1,9 +1,9 @@
-"use strict";var a=function(n,e){return function(){return e||n((e={exports:{}}).exports,e),e.exports}};var o=a(function(h,f){
-var s=require('@stdlib/math-base-assert-is-nanf/dist'),v=require('@stdlib/math-base-assert-is-negative-zerof/dist');function g(n,e,t){var i,r;return n<=0?NaN:n===1||t===0?e[0]:(t<0?(i=e[(1-n)*t],r=e[0]):(i=e[0],r=e[(n-1)*t]),s(i)||s(r)?NaN:i===r?v(i)||v(r)?-0:i:i<r?i:r)}f.exports=g
-});var m=a(function(j,N){
-var q=require('@stdlib/math-base-assert-is-nanf/dist'),c=require('@stdlib/math-base-assert-is-negative-zerof/dist');function l(n,e,t,i){var r,u;return n<=0?NaN:n===1||t===0?e[0]:(r=e[i],u=e[i+(n-1)*t],q(r)||q(u)?NaN:r===u?c(r)||c(u)?-0:r:r<u?r:u)}N.exports=l
-});var d=a(function(k,y){
-var Z=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),p=o(),O=m();Z(p,"ndarray",O);y.exports=p
-});var R=d();module.exports=R;
+"use strict";var n=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var u=n(function(b,o){
+var v=require('@stdlib/math-base-assert-is-nanf/dist'),f=require('@stdlib/math-base-assert-is-negative-zerof/dist');function y(e,r,a,s){var i,t;return e<=0?NaN:e===1||a===0?r[0]:(i=r[s],t=r[s+(e-1)*a],v(i)||v(t)?NaN:i===t?f(i)||f(t)?-0:i:i<t?i:t)}o.exports=y
+});var c=n(function(h,q){
+var x=require('@stdlib/strided-base-stride2offset/dist'),N=u();function g(e,r,a){return N(e,r,a,x(e,a))}q.exports=g
+});var p=n(function(j,m){
+var l=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),d=c(),O=u();l(d,"ndarray",O);m.exports=d
+});var R=p();module.exports=R;
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
